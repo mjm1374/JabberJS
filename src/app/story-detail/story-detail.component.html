@@ -1,0 +1,15 @@
+Hello world
+<div *ngIf="story">
+
+  <h2>{{ story.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{story.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="story.name" placeholder="New Story">
+    </label>
+    <label>url:
+      <input [(ngModel)]="story.url" placeholder="http://">
+    </label>
+  </div>
+
+</div>

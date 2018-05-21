@@ -1,0 +1,14 @@
+<h2>My Stories!</h2>
+
+<ul class="stories">
+  <li *ngFor="let Story of stories">
+   <a href='{{Story.url}}'>
+      <span class="badge">{{Story.id}}</span> - {{Story.name}}
+   </a>
+   <div (click)="onSelect(Story)" class='editme'>Edit</div>
+  </li>
+  
+</ul>
+
+<app-story-detail [story]="selectedStory"></app-story-detail>
+ 
